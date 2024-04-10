@@ -25,7 +25,13 @@ body{
     background-color: #efefef;
 }
 
-
+.slider-container{
+    max-width: 1120px;
+    width: 100%;
+    border: 2px solid red;
+    background-color: gray;
+    padding: 40px 0;
+}
 .slide-content{
     margin: 0 40px;
 }
