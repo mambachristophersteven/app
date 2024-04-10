@@ -31,9 +31,9 @@
         max-width: 1120px;
         width: 100%;
         display: flex;
+        padding: 60px 20px;
         border: 2px solid red;
-        background-color: gray;
-        padding: 40px 0px;
+        position: relative;
     }
 
     .swiper-slide {
@@ -126,6 +126,40 @@
 
     .button:hover{
         background-color: #265df2;
+    }
+    .nav-btn::after,
+    .nav-btn::before{
+        font-size: 15px;
+    }
+
+    .nav-btn{
+        color: #6e93f7;
+        transition: color 0.3 ease;
+        position: absolute;
+        top: 5%;
+        z-index: 1000;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .nav-btn:hover{
+        color: #4070f4;
+    }
+
+    .btn-left{
+        right: 0;
+    }
+    .btn-right{
+        left: 0;
+    }
+    .swiper-pagination-bullet{
+        background-color: black;
+    }
+
+    @media screen and (max-width: 768px){
+        .nav-btn{
+            display: none;
+        }
     }
 
     /* .swiper-slide img {
@@ -247,8 +281,8 @@
             </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next nav-btn btn-left"></div>
+        <div class="swiper-button-prev nav-btn btn-right"></div>
         <div class="swiper-pagination"></div>
 
     </div>
@@ -260,16 +294,31 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
+      centerSlide: 'true',
+      fade: 'true',
+      grabCursor: 'true',
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
       },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        }
       },
     });
   </script>
