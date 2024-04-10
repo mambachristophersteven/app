@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+  <link rel="stylesheet" href="./swiper-bundle.min.css">
+  <link rel="stylesheet" href="./slider.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #efefef;
+    }
+
+    .swiper {
+        max-width: 1120px;
+        width: 100%;
+        display: flex;
+        border: 2px solid red;
+        background-color: gray;
+        padding: 40px 400px;
+    }
+
+    .swiper-slide {
+        /* width: 50%; */
+        background: #fff;
+        border-radius: 25px;
+    }
+    .image-content,
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+        text-align: center;
+    }
+
+    .image-content{
+        row-gap: 5px;
+        position: relative;
+        padding: 25px;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #4070f4;
+        border-radius: 25px 25px 0 25px;
+    }
+
+    .overlay::before,
+    .overlay::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: #4070f4;
+    }
+
+    .overlay::after{
+        border-radius: 0 25px 0 0;
+        background-color: #fff;
+    }
+
+    .card-image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        background-color: #fff;
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+    .card-image .card-img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4070f4;
+    }
+
+    .name{
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: #333;
+    }
+
+    .description{
+        font-size: 14px;
+        color: #707070;
+    }
+
+    .button{
+        border: none;
+        font-size: 16px;
+        color: #fff;
+        padding: 8px 16px;
+        background-color: #4070f4;
+        border-radius: 6px;
+        margin: 14px;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover{
+        background-color: #265df2;
+    }
+
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+    /* .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    } */
+  </style>
+</head>
+
+<body>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="./customer1.png" class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">david bell</h2>
+                    <p class="description">The lorem text section that contains header with having open functionality <br>Lorem ipsium dolor sit amet consecteur adipisicing elit</p>
+                    <button class="button">view more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+  <!-- Swiper JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="./swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

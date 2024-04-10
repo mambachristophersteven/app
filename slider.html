@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slider</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="stylesheet" href="./slider.css">
-    <link rel="stylesheet" href="./swiper.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
 </head>
 <body>
     <div class="loader"></div>
-    <div class="slider-container swiper">
+    <div class="slider-container">
         <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
+            <div class="card-wrapper">
+                <div class="card">
                     <div class="image-content">
                         <span class="overlay"></span>
 
@@ -29,30 +29,14 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div> -->
     </div>
 
     
     <script src="./slider.js"></script>
-    <script src="./script.js"></script>
-    <script src="./swiper.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
 
-    <!-- <script>
-    var swiper = new Swiper(".swiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script> -->
 </body>
 </html>
